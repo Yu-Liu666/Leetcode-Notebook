@@ -31,12 +31,13 @@
 }
 
 .boxed-view__box--display1{
-  width:40rem;
-  height: 40rem;
+  width:60vw;
+  height: 50vh;
+  overflow: auto;
 }
 
 .boxed-view__box--display2{
-  width: 60vw;
+  width: 80vw;
   overflow: auto;
   //height: 40rem;
 }
