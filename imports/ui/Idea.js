@@ -28,7 +28,7 @@ export default class Idea extends React.Component{
       <Modal isOpen={this.state.isOpen}
             contentLabel="Thinking about the problem"
             onRequestClose={this.set.bind(this)}
-            className="boxed-view__box--display boxed-view__box "
+            className="boxed-view__box--display1 boxed-view__box "
             overlayClassName="boxed-view boxed-view--modal">
         <h1>Your Note</h1>
         <textarea ref="content" className="boxed-view__display boxed-view__textarea" rows="20" cols="55" name="comment" form="usrform">

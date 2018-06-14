@@ -30,12 +30,17 @@
   display: inline-block;
 }
 
-.boxed-view__box--display{
-  width: 40rem;
+.boxed-view__box--display1{
+  width:40rem;
   height: 40rem;
+}
+
+.boxed-view__box--display2{
+  width: 60vw;
+  overflow: auto;
+  //height: 40rem;
 }
 
 .boxed-view__textarea{
   font-size: 1.8rem;
-
 }

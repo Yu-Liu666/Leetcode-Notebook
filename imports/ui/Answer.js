@@ -28,7 +28,7 @@ export default class Answer extends React.Component{
       <Modal isOpen={this.state.isOpen}
             contentLabel="Answer of Problem"
             onRequestClose={this.set.bind(this)}
-            className="boxed-view__box--display boxed-view__box "
+            className="boxed-view__box--display2 boxed-view__box "
             overlayClassName="boxed-view boxed-view--modal">
         <h1>Solutions</h1>
         <img src={this.state.answer}/>
