@@ -31,7 +31,7 @@ export default class Idea extends React.Component{
             className="boxed-view__box--display boxed-view__box "
             overlayClassName="boxed-view boxed-view--modal">
         <h1>Your Note</h1>
-        <textarea ref="content" className="boxed-view__display boxed-view__textarea" rows="30" cols="100" name="comment" form="usrform">
+        <textarea ref="content" className="boxed-view__display boxed-view__textarea" rows="20" cols="55" name="comment" form="usrform">
           {this.get()}
         </textarea>
         <br/>
