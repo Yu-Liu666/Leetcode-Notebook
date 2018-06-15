@@ -47,6 +47,7 @@ export default class LinksList extends React.Component{
     this.linksTracker=Tracker.autorun(()=>{
         Meteor.subscribe('linksPub');
         const links=Links.find({visible:Session.get("showLinks")}).fetch();
+        console.log(links);
         this.setState({links});
     });
   }

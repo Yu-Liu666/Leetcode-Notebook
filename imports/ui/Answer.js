@@ -24,7 +24,7 @@ export default class Answer extends React.Component{
   render(){
     return(
     <div className="boxed-view__display">
-      <button onClick={()=>{this.getPath()}} className="button button--pill"> Answer </button>
+      <button onClick={()=>{this.getPath()}} className="button button--pill"> Solution </button>
       <Modal isOpen={this.state.isOpen}
             contentLabel="Answer of Problem"
             onRequestClose={this.set.bind(this)}
@@ -32,6 +32,7 @@ export default class Answer extends React.Component{
             overlayClassName="boxed-view boxed-view--modal">
         <h1>Solutions</h1>
         <img src={this.state.answer}/>
+        <br/>
         <button type="button" className="button button--secondary" onClick={this.set.bind(this)}>Close</button>
       </Modal>
     </div>

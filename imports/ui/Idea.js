@@ -31,9 +31,10 @@ export default class Idea extends React.Component{
             className="boxed-view__box--display1 boxed-view__box "
             overlayClassName="boxed-view boxed-view--modal">
         <h1>Your Note</h1>
-        <textarea ref="content" className="boxed-view__display boxed-view__textarea" rows="20" cols="80" name="comment" form="usrform">
+        <textarea ref="content" className="boxed-view__display boxed-view__textarea" rows="20" cols="35" name="comment" form="usrform">
           {this.get()}
         </textarea>
+        <br/>
         <br/>
         <button type="button" className="button button--secondary button--note--slight" onClick={this.setText.bind(this)}>Save</button>
         <button type="button" className="button button--secondary" onClick={this.set.bind(this)}>Close</button>

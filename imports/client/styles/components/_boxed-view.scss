@@ -30,12 +30,6 @@
   display: inline-block;
 }
 
-.boxed-view__box--display1{
-  width:60vw;
-  height: 50vh;
-  overflow: auto;
-}
-
 .boxed-view__box--display2{
   width: 80vw;
   overflow: auto;
@@ -44,4 +38,36 @@
 
 .boxed-view__textarea{
   font-size: 1.8rem;
+}
+
+@media screen and (min-width:1200px)
+{
+  .boxed-view__box--display1{
+    width:30vw;
+    overflow: auto;
+  }
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1199px)
+{
+  .boxed-view__box--display1{
+    width:30vw;
+    overflow: auto;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1023px)
+{
+  .boxed-view__box--display1{
+    width:30vw;
+    overflow: auto;
+  }
+}
+@media screen and (max-width:768px)
+{
+  .boxed-view__box--display1{
+    width:80vw;
+    height:80vh;
+    overflow: auto;
+  }
 }

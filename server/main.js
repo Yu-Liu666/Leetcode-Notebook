@@ -23,5 +23,7 @@ Meteor.startup(() => {
      next();
    }
  });
-  
+
+ console.log(Problems.find().fetch());
+
  });
