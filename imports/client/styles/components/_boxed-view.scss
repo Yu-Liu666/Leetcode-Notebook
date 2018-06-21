@@ -37,7 +37,7 @@
 }
 
 .boxed-view__textarea{
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width:1200px)
@@ -45,6 +45,10 @@
   .boxed-view__box--display1{
     width:30vw;
     overflow: auto;
+  }
+
+  .boxed-view__textarea1{
+
   }
 
 }
@@ -55,6 +59,10 @@
     width:30vw;
     overflow: auto;
   }
+
+  .boxed-view__textarea1{
+
+  }
 }
 @media screen and (min-width:768px) and (max-width:1023px)
 {
@@ -62,12 +70,22 @@
     width:30vw;
     overflow: auto;
   }
+
+  .boxed-view__textarea1{
+
+  }
 }
 @media screen and (max-width:768px)
 {
   .boxed-view__box--display1{
-    width:80vw;
-    height:80vh;
+    width:90vw;
+    height:90vh;
     overflow: auto;
   }
+
+  .boxed-view__textarea1{
+    width: 60vw;
+    height:50vh;
+  }
+
 }

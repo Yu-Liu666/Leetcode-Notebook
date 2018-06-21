@@ -20,7 +20,7 @@ export default class LinksList extends React.Component{
     {
       return (
         <div className="item">
-          <p className="item__status-message">No Links Found</p>
+          <p className="item__status-message">No Problems Found</p>
         </div>
       );
     }
