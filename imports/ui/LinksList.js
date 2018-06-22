@@ -16,15 +16,17 @@ export default class LinksList extends React.Component{
   }
 
   renderLinksItems(){
+    console.log(this.state.links.length);
     if(this.state.links.length==0)
     {
+      console.log("Update");
       return (
         <div className="item">
           <p className="item__status-message">No Problems Found</p>
         </div>
       );
     }
-
+    console.log("Unupdate");
     const links=this.state.links;
     console.log(links);
     return links.map((link)=>{

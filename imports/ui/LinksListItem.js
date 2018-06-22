@@ -73,7 +73,7 @@ export default class LinksListItem extends React.Component{
     );
   }
 }
-
+// <button className="button button--pill" ref="delete" onClick={()=>{Meteor.call('links.delete',this.props._id)}}>Delete</button>
 LinksListItem.propTypes={
   _id:React.PropTypes.string.isRequired,
   url:React.PropTypes.string.isRequired,

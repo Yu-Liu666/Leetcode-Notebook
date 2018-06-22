@@ -19,6 +19,8 @@ Tracker.autorun(()=>{
 });
 Meteor.startup(() => {
   // code to run on server at startup
+
   Session.set('showLinks',true);
   ReactDOM.render(routes, document.getElementById("app"));
+  
 });

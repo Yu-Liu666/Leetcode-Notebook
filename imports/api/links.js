@@ -2,15 +2,19 @@ import {Mongo} from 'meteor/mongo';
 import {Meteor} from 'meteor/meteor';
 import SimpleSchema from 'simpl-schema';
 import shortid from 'shortid';
+import {Tracker} from 'meteor/tracker';
 import './../startup/simple-schema-configuration';
 
 export const Links=new Mongo.Collection("links");
+
 
 if(Meteor.isServer){
   Meteor.publish('linksPub',function (){
     return Links.find({userId:this.userId});
   });
 }
+
+
 
 Meteor.methods({
   'links.insert'(url,link){
@@ -69,5 +73,12 @@ Meteor.methods({
        }
      }).validate({_id});
      Links.update({_id},{$set:{lastVisitedAt:new Date().getTime()},$inc:{visitedCount:1}});
+ },
+
+ 'links.delete'(_id){
+   if(!this.userId)
+     throw new Meteor.Error("not-authorized");
+   Links.remove({_id});
  }
+
 });
